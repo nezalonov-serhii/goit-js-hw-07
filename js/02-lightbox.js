@@ -19,7 +19,7 @@ galleryEl.insertAdjacentHTML("beforeend", addGalleryItems(galleryItems));
 galleryEl.addEventListener("click", onImgClick);
 
 function onImgClick(event) {
-   if (event.target === event.currentTarget) {
+   if (event.target.nodeName !== "IMG") {
       return;
    }
 
