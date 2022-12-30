@@ -16,9 +16,9 @@ function addGalleryItems(galleryItems) {
 
 galleryEl.insertAdjacentHTML("beforeend", addGalleryItems(galleryItems));
 
-galleryEl.addEventListener("click", showBigPictures);
+galleryEl.addEventListener("click", onImgClick);
 
-function showBigPictures(event) {
+function onImgClick(event) {
    if (event.target === event.currentTarget) {
       return;
    }

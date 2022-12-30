@@ -23,9 +23,9 @@ function addGalleryItems(galleryItems) {
 
 galleryEl.insertAdjacentHTML("beforeend", addGalleryItems(galleryItems));
 
-galleryEl.addEventListener("click", resizePictures);
+galleryEl.addEventListener("click", onImgClick);
 
-function resizePictures(event) {
+function onImgClick(event) {
    event.preventDefault();
 
    if (event.target.nodeName !== "IMG") {
